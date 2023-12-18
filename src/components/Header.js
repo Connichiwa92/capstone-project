@@ -11,7 +11,7 @@ const Header = () => {
                     <h2>Little Lemon</h2>
                     <h3>Chicago</h3>
                     <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <a href="/Booking"><button>Reserve Table</button></a>
+                    <Link to="/booking"><button>Reserve Table</button></Link>
                 </div>
                 <div className='banner-img'>
                     <img src={headerPicture} alt="header picture"/>

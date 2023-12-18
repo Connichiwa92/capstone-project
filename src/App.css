@@ -205,7 +205,16 @@ footer ul li a:hover{
 }
 
 /*RESPONSIVE DESIGN*/
-@media(max-width: 770px){
+@media(max-width:1240px){
+  .banner-img img{
+    display: none;
+  }
+
+  .banner p{
+    max-width: 100%;
+  }
+}
+@media(max-width: 945px){
   .menu-icon{
     display:block; /*Show menu bar button*/
   }
@@ -229,10 +238,6 @@ footer ul li a:hover{
 
   nav ul li a{
     color: #fff;
-  }
-
-  .banner-img img{
-   display:none; /*hide picture*/
   }
 
   .dishContainer{
