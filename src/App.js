@@ -5,18 +5,16 @@ import Nav from './components/Nav';
 // import Header from './components/Header';
 import Footer from './components/Footer';
 // import Menu from './components/Menu';
-import Booking from './components/Booking';
-import Homepage from './components/Homepage';
+// import BookingPage from './components/BookingPage';
+// import Homepage from './components/Homepage';
+import Main from './components/Main';
 
 
 function App() {
   return (
     <>
       <Nav/>
-      <Routes>
-        <Route path ="/" element={<Homepage/>}/>
-        <Route path ="/booking" element={<Booking/>}/>
-      </Routes>
+      <Main/>
       <Footer/>
     </>
   );

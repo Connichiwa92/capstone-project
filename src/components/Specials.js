@@ -1,7 +1,7 @@
 import React from 'react'
 import Dishes from './Dishes.js'
 
-const Menu = () => {
+const Specials = () => {
     return(
         <section className='specials'>
             <div className='specialsHeading'>
@@ -26,4 +26,4 @@ const Menu = () => {
     )
 }
 
-export default Menu;
+export default Specials;
