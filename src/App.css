@@ -123,7 +123,6 @@ nav ul li a:hover{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .specialsDishes{
@@ -175,11 +174,56 @@ nav ul li a:hover{
   margin: 0px 10px 20px;
   font-size:16px;
 }
+/*END OF SPECIALS SECTION*/
 
-/*End of specials section*/
+/* TESTIMONIALS SECTION */
+.testimonials{
+  margin: 10px 13%;
+}
+/* .testimonialHeading{
+  padding: 10px 13%;
+} */
 
-/*Footer Section*/
-footer{
+.testimonialReviews{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem
+}
+.reviewContainer{
+  padding: 20px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #495e57;
+  width: 20%;
+  border-radius: 20px;
+}
+
+.review-img img{
+  border-radius: 20px;
+  top: 20px;
+  right: 20px;
+  height: 10vh;
+}
+
+.reviewHeading h2{
+  color: #F4CE14;
+}
+
+.reviewHeading p{
+  color: white;
+}
+/* .reviewHeading{
+  display:flex;
+  flex-directing: column;
+  justify-content: space-between;
+  padding: 20px;
+} */
+/* END OF TESTIMONIALS SECTION */
+
+/* FOOTER SECTION */
+footer section{
   padding: 10px 13%;
   display: flex;
   flex-direction: row;
@@ -187,6 +231,25 @@ footer{
   align-items: start;
 }
 
+.about-us-description h2{
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.about-us-description h3{
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.about-us-description p{
+  max-width: 520px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-img img{
+  border-radius:20px;
+}
 footer ul {
   padding: 0;
   display: inline-block;
@@ -203,15 +266,24 @@ footer ul li a{
 footer ul li a:hover{
   text-decoration: underline solid #495e57;;
 }
+/* END OF FOOTER SECTION */
 
 /*RESPONSIVE DESIGN*/
 @media(max-width:1240px){
-  .banner-img img{
+  .banner-img img, .footer-img img{
     display: none;
   }
 
   .banner p{
     max-width: 100%;
+  }
+
+  .dishContainer, .reviewContainer{
+    width: 100%; /*specials dishes span whole screen*/
+  }
+  
+  .review-img img{
+    height: 20vh;
   }
 }
 @media(max-width: 945px){
@@ -240,10 +312,7 @@ footer ul li a:hover{
     color: #fff;
   }
 
-  .dishContainer{
-    width: 100%; /*specials dishes span whole screen*/
-  }
-
+  
   footer{
     flex-direction: column; /*each footer column spans whole screen*/
   }
