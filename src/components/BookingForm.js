@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import restaurantSeating from '../images/restaurantsetting.png';
 
 const BookingForm = (props) => {
     const [firstName, setFirstName] = useState("");
@@ -87,13 +88,15 @@ const BookingForm = (props) => {
 
                         {/* comments */}
                         <div>
-                            <label htmlFor='bookingComments'>Comments</label>
+                            <label htmlFor='bookingComments'>Comments:</label>
                             <input id='bookingComments' type='text' value={comments} onChange={(e) => setComments(e.target.value)}/>
                         </div>
-                        <div>
-                            <button type='submit'>Submit</button>
+                        <div id="seating">
+                            <img src={restaurantSeating} alt="seating chart"/>
                         </div>
-                        
+                        <div>
+                            <button type='submit' id='formButton' aria-label='On Click'>Submit</button>
+                        </div>
                     </fieldset>
                 </form>
             </section>

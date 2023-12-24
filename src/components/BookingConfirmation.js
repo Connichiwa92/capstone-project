@@ -1,9 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ConfirmationPage = () => {
     return(
-        <div className='confirmation'>
-            <p>Booking has been confirmed!</p>
+        <div className='confirmationArea'>
+            <div className='confirmationBox'>
+                <p>Reservation Confirmed!</p>
+                <Link to = "/"><button>Ok!</button></Link>
+            </div>
+            
         </div>
     )
 }

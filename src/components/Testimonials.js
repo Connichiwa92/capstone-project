@@ -6,7 +6,7 @@ const Testimonials = () => {
         <>
         <section className="testimonials">
             <section className="testimonialHeading">
-                <h1>Testimonials</h1>
+                <h2>Testimonials</h2>
             </section>
             <section className="testimonialReviews">
                 {
@@ -18,8 +18,6 @@ const Testimonials = () => {
                         <div className='review-img'>
                             <img src={review.image} alt=''/>
                         </div>
-                        
-                        
                     </div>)
                 }
             </section>

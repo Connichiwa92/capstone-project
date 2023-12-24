@@ -180,9 +180,6 @@ nav ul li a:hover{
 .testimonials{
   margin: 10px 13%;
 }
-/* .testimonialHeading{
-  padding: 10px 13%;
-} */
 
 .testimonialReviews{
   display: flex;
@@ -270,11 +267,66 @@ footer ul li a:hover{
 
 /*BOOKING FORM*/
 .bookingForm{
-  padding: 10px 13%;
-  display: flex;
-  justify-content: space-between;
+  height: fit-content;
+  width:fit-content;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 20px;
 }
+
+input, label{
+  margin: 10px;
+  display: inline-block;
+
+}
+
+#bookingFirstName, #bookingLastName, #bookingPhoneNumber, #bookingDate, #bookingTime, #bookingGuests, #bookingOccasion, #bookingComments{
+  background-color:#edefee;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px 3px;
+}
+
+#bookingComments{
+  margin: 10px;
+}
+
+#seating{
+  margin: 5px 10%;
+}
+
+#formButton{
+  margin: 5px 35%;
+}
+
 /* END OF BOOKING FORM */
+
+/* BOOKING CONFIRMATION */
+.confirmationArea{
+  background-color: #edefee;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  padding: 50px;
+}
+.confirmationBox{
+  background-color: #495e57;
+  height: 150px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.confirmationBox p{
+  color:#F4CE14;
+  font-size: 20px;
+  /* align-self: center; */
+}
+/* END OF BOOKING CONFIRMATION */
 /*RESPONSIVE DESIGN*/
 @media(max-width:1240px){
   .banner-img img, .footer-img img{

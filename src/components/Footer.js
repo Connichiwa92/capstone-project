@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import footerLogo from '../images/footerLogo.png'
 import marioAndAdrian from '../images/Mario and Adrian b.jpg';
 
@@ -23,19 +24,20 @@ const Footer = () => {
                 <div>
                     <h3>Important Links</h3>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Menu</a></li>
-                        <li><a href="/">Reservations</a></li>
-                        <li><a href="/">Order Online</a></li>
-                        <li><a href="/">Login</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/">About</Link></li>
+                        <li><Link to="/">Menu</Link></li>
+                        <li><Link to="/Booking">Reservations</Link></li>
+                        <li><Link to="/">Order Online</Link></li>
+                        <li><Link to="/">Login</Link></li>
                     </ul>
                 </div>
                 <div>
                     <h3>Contact</h3>
                     <ul>
-                        <li>Address & Phone Number</li>
-                        <li>Email</li>
+                        <li>Address: 111 Lemon Road, Chicago</li>
+                        <li>Phone Number: +1 312-123-1234</li>
+                        <li>Email: littlelemon@restaurants.com</li>
                     </ul>
                 </div>
                 <div>
@@ -46,8 +48,6 @@ const Footer = () => {
                     </ul>
                 </div>
             </section>
-            
-            
         </footer>
     )
 }

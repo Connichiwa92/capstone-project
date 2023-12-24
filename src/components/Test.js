@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import BookingPage from './components/BookingPage';
+import App from "./App";
+import BookingPage from "./BookingPage";
 
 test("Renders booking form heading", () => {
     render(<BookingPage />);
